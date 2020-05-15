@@ -19,4 +19,11 @@
     echo $beltrano->nome . " " . $beltrano->sobrenome;
     echo "<br/><hr/><br/>";
 
+    // Vamos instanciar uma última pessoaX (objeto) a partir da classe PessoaX:
+    $ciclano = new PessoaX();
+    $ciclano->nome = "Ciclano";
+    $ciclano->sobrenome = "da Silva";
+    echo $ciclano->nome . " " . $ciclano->sobrenome;
+    echo "<br/><hr/><br/>";
+
 ?>
