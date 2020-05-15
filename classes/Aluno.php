@@ -6,12 +6,15 @@
     // Estamos criando uma classe. Para isso, precisamos usar a keyword class e, em seguida, o nome da classe. Lembrando que as classes, por convenção, começam cada palavra em CaixaAlta.
     class Aluno {
 
+        // Propriedade pública 'nome'
         public $nome;
         
+        // Método público 'estudar' - retorna um 'echo'
         public function estudar() {
             echo "O aluno está estudando";
         }
 
+        // Método público 'descansar' - retorna uma string
         public function descansar() {
             return "O aluno está descansando";
         }

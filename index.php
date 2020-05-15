@@ -26,4 +26,26 @@
     echo $ciclano->nome . " " . $ciclano->sobrenome;
     echo "<br/><hr/><br/>";
 
+    // MÉTODOS
+    echo "<h2>MÉTODOS</h2>";
+    // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
+    require_once("./classes/Aluno.php");
+
+    // Vamos instanciar um aluno (objeto) a partir da classe Aluno:
+    $rodrigoMachado = new Aluno();
+    $rodrigoMachado->nome = "Rodrigo Machado";
+    echo "Aluno " . $rodrigoMachado->nome . "<br/>";
+    $rodrigoMachado->estudar();
+    echo  "<br/>" . $rodrigoMachado->descansar() . "<br/>";
+    echo "<br/><hr/><br/>";
+
+    // Vamos instanciar um aluno (objeto) a partir da classe Aluno:
+    $luigiProfeti = new Aluno();
+    $luigiProfeti->nome = "Luigi Profeti";
+    echo "Aluno " . $luigiProfeti->nome . "<br/>";
+    $luigiProfeti->estudar();
+    echo  "<br/>" . $luigiProfeti->descansar() . "<br/>";
+    echo "<br/><hr/><br/>";
+
+
 ?>
