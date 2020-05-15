@@ -1,7 +1,9 @@
 <?php
 
+
     // PROPRIEDADES
     echo "<h2>PROPRIEDADES</h2>";
+
     // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
     require_once("./classes/PessoaX.php");
 
@@ -26,8 +28,10 @@
     echo $ciclano->nome . " " . $ciclano->sobrenome;
     echo "<br/><hr/><br/>";
 
+
     // MÉTODOS
     echo "<h2>MÉTODOS</h2>";
+
     // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
     require_once("./classes/Aluno.php");
 
@@ -47,5 +51,25 @@
     echo  "<br/>" . $luigiProfeti->descansar() . "<br/>";
     echo "<br/><hr/><br/>";
 
+
+    // $this
+    echo "<h2>\$this</h2>";
+
+    // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
+    require_once("./classes/Escola.php");
+
+    // Vamos instanciar uma Escola (objeto) a partir da classe Escola:
+    $dhsp = new Escola();
+    $dhsp->nomeDaEscola = "Digital House SP";
+    $dhsp->cidade = "São Paulo";
+    $dhsp->localizar();
+    echo "<br/><hr/><br/>";
+
+    // Vamos instanciar uma Escola (objeto) a partir da classe Escola:
+    $dhny = new Escola();
+    $dhny->nomeDaEscola = "Digital House NY";
+    $dhny->cidade = "New York";
+    $dhny->localizar();
+    echo "<br/><hr/><br/>";
 
 ?>
