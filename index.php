@@ -94,4 +94,30 @@
     // Chamando o método fazerIntervalo():
     // $aula01->fazerIntervalo(); => Não podemos mais acessar o método fazerIntervalo pois executamos o unset() em $aula01, logo, o ciclo de vida desse objeto $aula01 se encenrrou (forçamos o método descruct).
 
+
+    // CONSTRUCT COM PARÂMETRO
+    echo "<h2>CONSTRUCT COM PARÂMETRO</h2>";
+
+    // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
+    require_once("./classes/Matricula.php");
+
+    // Vamos instanciar um professor (objeto) a partir da classe Professor:
+    $matricula01 = new Matricula("Abiro Oswaldo");
+
+
+    // DESAFIO IMC - Índice de Massa Corpórea (ou Corporal)
+    /*
+     * Temos quer criar uma classe Individuo que contém as propriedades:
+     * PESO e ALTURA
+     * 
+     * Depois precisaremos retornar o IMC desse Individuo, que é calculado
+     * através do PESO / (ALTURA * ALTURA) * 10000
+     * 
+     * Obs. multiplicamos por dez mil pois esperamos receber
+     * o peso em KG e altura em CM.
+     * 
+     * Retornar NOME, PESO, ALTURA e IMC de cada objeto instanciado.
+    */
+
+
 ?>

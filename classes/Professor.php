@@ -11,7 +11,7 @@
             
             // Declarando um método dentro do método mágico construct
             function ensinar() {
-                echo "O professor está ensinando<br/>";
+                echo "O professor está ensinando [classe Professor > método construct]<br/>";
             }
             // Executando o método dentro do construct, de forma que será não só declarado mas também executado assim que um novo objeto for instanciado.
             ensinar();
