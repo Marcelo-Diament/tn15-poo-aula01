@@ -82,4 +82,16 @@
     // Vamos instanciar um professor (objeto) a partir da classe Professor:
     $victor = new Professor();
 
+    echo "<h3>DESTRUCT com unset()</h3>";
+
+    // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
+    require_once("./classes/Aula.php");
+
+    // Vamos instanciar um professor (objeto) a partir da classe Professor:
+    $aula01 = new Aula();
+    // Chamando o método descruct através de unset() (descomente o método $aula01->fazerIntervalo() para ver que ocorrerá um erro)
+    unset($aula01);
+    // Chamando o método fazerIntervalo():
+    // $aula01->fazerIntervalo(); => Não podemos mais acessar o método fazerIntervalo pois executamos o unset() em $aula01, logo, o ciclo de vida desse objeto $aula01 se encenrrou (forçamos o método descruct).
+
 ?>
