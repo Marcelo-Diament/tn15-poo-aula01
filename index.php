@@ -72,4 +72,14 @@
     $dhny->localizar();
     echo "<br/><hr/><br/>";
 
+
+    // CONSTRUCT/DESTRUCT
+    echo "<h2>CONSTRUCT/DESTRUCT</h2>";
+
+    // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
+    require_once("./classes/Professor.php");
+
+    // Vamos instanciar um professor (objeto) a partir da classe Professor:
+    $victor = new Professor();
+
 ?>
