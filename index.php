@@ -106,18 +106,13 @@
 
 
     // DESAFIO IMC - Índice de Massa Corpórea (ou Corporal)
-    /*
-     * Temos quer criar uma classe Individuo que contém as propriedades:
-     * PESO e ALTURA
-     * 
-     * Depois precisaremos retornar o IMC desse Individuo, que é calculado
-     * através do PESO / (ALTURA * ALTURA) * 10000
-     * 
-     * Obs. multiplicamos por dez mil pois esperamos receber
-     * o peso em KG e altura em CM.
-     * 
-     * Retornar NOME, PESO, ALTURA e IMC de cada objeto instanciado.
-    */
+    echo "<h2>DESAFIO IMC</h2>";
+
+    // Chamando/trazendo o arquivo da classe para que possamos instanciar um objeto a partir dela.
+    require_once("./classes/Individuo.php");
+
+    // Vamos instanciar um individuo (objeto) a partir da classe Individuo:
+    $individuo = new Individuo("João", 65, 175);
 
 
 ?>
