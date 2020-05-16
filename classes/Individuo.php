@@ -34,7 +34,7 @@
                 // Retorna o resultado do cáulco considerando o peso recebido em kg e a altura em cm.
                 return ( $peso / ($altura * $altura) * 10000 );
             }
-            echo "O IMC de " . $this->nome . " é " . calcularImc($this->peso, $this->altura) . "<br/><hr/><br/>";
+            echo "O IMC de " . $this->nome . " (que pesa " . $this->peso . " kg e mede " . $this->altura . " cm) é " . calcularImc($this->peso, $this->altura) . "<br/><hr/><br/>";
 
         }
     }
